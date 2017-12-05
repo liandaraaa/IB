@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Indonesia Berbicara</string>
+    <string name="diskusi_ini">Diskusi Minggu Ini</string>
+    <string name="diskusi_lalu">Diskusi Sebelumnya</string>
+</resources>

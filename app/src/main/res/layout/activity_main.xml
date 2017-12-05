@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.lianda.mudabergerak.ib.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoib"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_diskusi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diskusi_ini"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/diskus"/>
+
+            <android.support.v7.widget.CardView
+                android:onClick="diskusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_ini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:foreground="@android:drawable/screen_background_dark_transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/bidadari"
+                        android:scaleType="fitXY" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_judul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="Curug Bidadari kini diperluas sebasar 1hektar dan membuat akses masuk dialihkan"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentLeft="true"/>
+
+
+                    <RelativeLayout
+                            android:id="@+id/rl_tanggal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/rounded"
+                                android:paddingLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/tv_tanggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="24 oktober 2017"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@android:color/white"
+                                android:paddingLeft="10dp" />
+                        </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diskusi Sebelumnya"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/diskus"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="detailKesimpulan">
+
+                <RelativeLayout
+                    android:id="@+id/rl_satu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:foreground="@android:drawable/screen_background_dark_transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/cilember"
+                        android:scaleType="fitXY" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_judulsatu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curug cilember mengalami peningkatan pengunjung yang signifikan"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_tanggalsatu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/rounded"
+                            android:paddingLeft="10dp"/>
+                        <TextView
+                            android:id="@+id/tv_tanggalsatu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="17 oktober 2017"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/white"
+                            android:paddingLeft="10dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_dua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:foreground="@android:drawable/screen_background_dark_transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/hejo"
+                        android:scaleType="fitXY" />
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_juduldua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curug Leuwi hejo memakan korban jiwa"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentLeft="true"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_tanggaldua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="10dp">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/rounded"
+                            android:paddingLeft="10dp"/>
+                        <TextView
+                            android:id="@+id/tv_tanggaldua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 oktober 2017"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/white"
+                            android:paddingLeft="10dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/FloatingActionMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:menu_fab_size="normal"
+                app:menu_showShadow="true"
+                app:menu_shadowColor="#66000000"
+                app:menu_shadowRadius="4dp"
+                app:menu_shadowXOffset="1dp"
+                app:menu_shadowYOffset="3dp"
+                app:menu_colorNormal="#DA4336"
+                app:menu_colorPressed="#E75043"
+                app:menu_colorRipple="#99FFFFFF"
+                app:menu_animationDelayPerItem="50"
+                app:menu_icon="@drawable/fab_add"
+                app:menu_buttonSpacing="0dp"
+                app:menu_labels_margin="0dp"
+                app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                app:menu_labels_paddingTop="4dp"
+                app:menu_labels_paddingRight="8dp"
+                app:menu_labels_paddingBottom="4dp"
+                app:menu_labels_paddingLeft="8dp"
+                app:menu_labels_padding="8dp"
+                app:menu_labels_textColor="#FFFFFF"
+                app:menu_labels_textSize="14sp"
+                app:menu_labels_cornerRadius="3dp"
+                app:menu_labels_colorNormal="#333333"
+                app:menu_labels_colorPressed="#444444"
+                app:menu_labels_colorRipple="#66FFFFFF"
+                app:menu_labels_showShadow="true"
+                app:menu_labels_singleLine="false"
+                app:menu_labels_ellipsize="none"
+                app:menu_labels_maxLines="-1"
+                app:menu_labels_position="left"
+                app:menu_openDirection="up"
+                app:menu_backgroundColor="@android:color/transparent">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/subFloatingBuatArtikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="Buat Artikel"
+                    app:fab_size="mini"
+                    android:src="@drawable/ic_idea"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/subFloatingBuatKesimpulan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="Buat Kesimpulan"
+                    app:fab_size="mini"
+                    android:src="@drawable/ic_users"/>
+
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
